@@ -62,7 +62,9 @@
   position: fixed;
 } 
 
-
+.cambiacolor{
+  cursor: pointer;
+}
 
 /* .particulas{
   background-color: red;
@@ -209,7 +211,7 @@ img {
 /*==================== NAV ====================*/
 
 .nav{
-  max-width: 968px;
+  max-width: 1200px;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
@@ -364,6 +366,7 @@ img {
  }
  .home__img{
   margin: auto;
+  position: relative;
 }
  
  .home__scroll-button{
@@ -1280,6 +1283,8 @@ margin-bottom: 10px;
 
   .about__description{
     text-align: initial;
+    padding: 10px;
+    box-shadow:0 5px 10px rgba(0, 0, 0, .5) ;
   }
 
   .about__info{
@@ -1346,9 +1351,11 @@ margin-bottom: 10px;
   .header,
   .main,
   .footer__container{
-    padding: .8rem 0;
-    
+    padding: .8rem;
   }
+
+  
+  
 
   .home__blob{
     width: 350px;
@@ -1384,7 +1391,6 @@ margin-bottom: 10px;
 
   
 
- 
+ }
 
  
-}

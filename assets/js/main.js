@@ -155,3 +155,14 @@ themeButton.addEventListener("click", () => {
   localStorage.setItem("selected-theme", getCurrentTheme());
   localStorage.setItem("selected-icon", getCurrentIcon());
 });
+
+
+//change color
+n = 0;
+var colores = ['142','0','70','23','210']; 
+
+function cambiaColor() {
+    n++;
+    var root = document.documentElement;
+    root.style.setProperty('--hue-color', colores[n % colores.length]);
+}
