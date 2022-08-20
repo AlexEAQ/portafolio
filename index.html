@@ -759,7 +759,7 @@
             <div class="contact__container container grid">
                 <div>
 
-                    <div class="contac__information">
+                    <!-- <div class="contac__information">
                         <i class="uil uil-phone contact__icon"></i>
 
                         <div>
@@ -767,7 +767,7 @@
                             <span class="contact_subtitle">78820655</span>
                         </div>
 
-                    </div>
+                    </div> -->
 
                     <div class="contac__information">
                         <i class="uil uil-envelope contact__icon"></i>
@@ -791,33 +791,33 @@
 
                 </div>
 
-                <form action="" class="contact__form grid">
+                <div id="wrapper">
+                <form action="https://formsubmit.co/alexalejoq@gmail.com" id="form" method="POST"class="contact__form grid">
                     <div class="contact__inputs grid">
                         <div class="contact__content">
-                            <label for="" class="contact__label">Nombre :</label>
-                            <input type="text" class="contact__input">
+                            <label for="" class="contact__label" req>Nombre :</label>
+                            <input type="text" class="contact__input" name="name" id="name" required>
                         </div>
                         <div class="contact__content">
-                            <label for="" class="contact__label">Email :</label>
-                            <input type="email" class="contact__input">
+                            <label for="" class="contact__label">Correo Electronico :</label>
+                            <input type="email" class="contact__input" name="email" id="email" required>
                         </div>
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">Asunto :</label>
-                        <input type="text" class="contact__input">
+                        <input type="text" class="contact__input" name="subject" id="subject" required>
                     </div>
                     <div class="contact__content">
                         <label for="" class="contact__label">Mensaje :</label>
-                        <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                        <textarea name="comments" id="" cols="0" rows="7" class="contact__input" itemid="comments" required></textarea>
                     </div>
                     <div>
-                        <a href="#" class="button button--flex">
-                            Enviar Mensaje
-                            <i class="uil uil-message button__icon"></i>
-                        </a>
+                        
+                        <input  class="button button--flex" type="submit" value="Enviar Mensaje" id="button">
+                             
                     </div>
                 </form>
-
+            </div>
             </div>
         </section>
     </main>
@@ -883,6 +883,13 @@
 
     <script src="assets/js/particles.js"></script>
     <script src="assets/js/appp.js"></script>
+
+
+<script type="text/javascript">
+  emailjs.init('9wvWfYtbs3cZPANHm')
+</script>
+
+<script src="assets/js/enviarmensaje.js"></script>
     </div>
 </body>
 
