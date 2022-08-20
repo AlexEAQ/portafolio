@@ -1069,6 +1069,12 @@ margin-bottom: 10px;
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 
+@media screen and (min-width: 350px){
+  .home__social{
+    position: relative;
+  }
+ 
+}
 @media screen and (max-width: 350px){
   .home__social{
     position: relative;
